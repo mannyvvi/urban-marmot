@@ -4,7 +4,7 @@ def reader():
     import file_integrity
 
 
-    filename = 'testing_doc.txt' #set target filename
+    filename = 'testing_doc.csv' #set target filename
 
     integ = 0
     ##File integrity    

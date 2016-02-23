@@ -1,15 +1,16 @@
 import time
 import datetime
 import hashlib
+import random
 
 def writer(lista,filename):
     lista = []
     counter =0
-    count = 10
+    count = 100
     for x in xrange(0,count):
         a = 1
-        b = 1
-        c = 4
+        b = random.randint(0,100)
+        c = random.randint(99,200)
         if(a % 2 != 0):
             lista.append([a,b,c])
             ts = time.time()
@@ -17,7 +18,8 @@ def writer(lista,filename):
             lista[counter].insert(0,timestamp)
         else:
             pass
-        
+        time.sleep(1)
+        print lista[counter]
         f = open(filename, 'a') #w to nuke, a to append
         f.write('%s' % lista[counter])
         f.write("\n")
@@ -39,7 +41,7 @@ def writer(lista,filename):
 
 
 
-        raw_input()
+
 
 
     
