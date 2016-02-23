@@ -1,6 +1,6 @@
 def logger():
     ##Start up
-    import file_writer_4
+    import file_writer
 
 
     filename = 'testing_doc.txt' #sets target filename
@@ -14,6 +14,6 @@ def logger():
 
     ##Write File
     lista = []
-    file_writer_4.writer(lista,filename)
+    file_writer.writer(lista,filename)
 
         
